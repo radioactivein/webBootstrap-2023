@@ -4,28 +4,25 @@ body{
 }
 
 .header{
-    background-color: rgb(67, 167, 255);
-    position: sticky;
-    display: inline-flex;
+    background-color: rgb(147, 174, 200);
+    /* position: sticky; */
 }
 
 ul{
     list-style: none;
     text-decoration: none;
-    padding: 0;
+    padding-left: 0;
     margin: 0;
 }
 
-.list{
-    display: inline-flex;
-}
+
 
 .carousal{
-    display: inline-flex;
-    height: 650px;
+    /* display: inline-flex; */
+    /* height: 650px;
     background-color: aqua;
     background-image: url(img/carousel1.jpg);
     background-position:center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
