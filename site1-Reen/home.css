@@ -19,7 +19,10 @@ body{
    color: black;
    font-size: 20px;
 }
-
+.icons-1:hover{
+    color: rgb(58, 46, 146);
+    font-size: 20px;
+ }
 .icons-2{
     width: 70px;
 }
@@ -42,7 +45,10 @@ ul{
     font-size: 13px;
     color: rgb(99, 129, 149);
 }
-
+.nav-li:hover{
+    font-size: 13px;
+    color: rgb(13, 69, 105);
+}
 .row{
     --bs-gutter-x:0 !important;
 }
@@ -84,7 +90,7 @@ ul{
 }
 
 .cards-3{
-    background-color: rgb(241, 242, 243);
+    background-color: rgb(66, 123, 181);
 }
 
 .card4-data{
