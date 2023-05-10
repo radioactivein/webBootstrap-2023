@@ -4,25 +4,87 @@ body{
 }
 
 .header{
-    background-color: rgb(147, 174, 200);
+    background-color: rgb(241, 242, 243);
+    padding: 10px 0px;
+    font-size: 13px;
+    
     /* position: sticky; */
+}
+.header-2{
+    padding-top:8px;
+    padding-bottom: 5px;
+}
+
+.icons-1{
+   color: black;
+   font-size: 20px;
+}
+
+.icons-2{
+    width: 70px;
+}
+
+.logo{
+    max-width: 140px;
 }
 
 ul{
-    list-style: none;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.link{
     text-decoration: none;
-    padding-left: 0;
-    margin: 0;
+}
+
+.nav-li{
+    font-size: 13px;
+    color: rgb(99, 129, 149);
+}
+
+.row{
+    --bs-gutter-x:0 !important;
 }
 
 
-
-.carousal{
-    /* display: inline-flex; */
-    /* height: 650px;
-    background-color: aqua;
-    background-image: url(img/carousel1.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+.cntr-cntnt{
+    transform: translate(-50%,-50%);
+    margin: 0 auto !important;
+    max-width: 1000px !important;
 }
+
+.title1{
+    font-size: 80px;
+}
+
+.p1{
+    padding-bottom: 20px;
+    color: #8da3bb;
+    font-size: 16px;
+}
+
+
+.bt1{
+    background-color: rgb(33, 182, 142);
+    border: none;
+}
+
+.bt1:hover{
+    background-color: rgb(14, 162, 123);
+    border: none;
+}
+
+.cards-1{
+    padding: 80px 0;
+}
+
+.cards-2{
+    padding-bottom: 80px;
+}
+
+.cards-3{
+    background-color: rgb(241, 242, 243);
+}
+
+
