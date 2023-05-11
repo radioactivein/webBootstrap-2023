@@ -11,9 +11,14 @@ ul{
     background-color: rgb(235, 235, 235) !important;
 }
 
+.h1-icon{
+    
+}
 
 
-
+.logo{
+    margin: auto 0;
+}
 
 .bt1{
     font-size: 14px !important;
@@ -23,4 +28,9 @@ ul{
     background-color: rgb(255, 255, 255) !important;
     color: rgb(255, 213, 0) !important;
     border: solid 1px black;
+}
+
+.bt2{
+    /* height: 50px; */
+    margin: auto 0;
 }
