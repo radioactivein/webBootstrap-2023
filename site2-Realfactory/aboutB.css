@@ -3,12 +3,22 @@ body{
     margin: 0;
 }
 
+
+a{
+    text-decoration: none !important;
+}
+
 ul{
     list-style: none;
 }
 
 .header1{
     background-color: rgb(235, 235, 235) !important;
+}
+
+.row{
+    --bs-gutter-x:0 !important;
+    overflow: hidden;
 }
 
 .h1-icon{
@@ -33,4 +43,40 @@ ul{
 .bt2{
     /* height: 50px; */
     margin: auto 0;
+}
+
+.nav:hover{
+    border-bottom: solid 3px rgb(255, 213, 0);
+
+}
+
+.carousal{
+    height: 500px;
+    width: 100%;
+    background-image: url(img/night-dark.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.tile-2{
+    height: 600px !important;
+}
+
+.tile-2l{
+    height: 600px;
+    width: 100%;
+    background-color: yellow;
+    background-image:linear-gradient(red,yellow) ;
+    background-image: url(img/night.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.tile-2r ul{
+    font-size: 15px;
+}
+
+.tile-3l{
+    height: 600px !important;
 }
