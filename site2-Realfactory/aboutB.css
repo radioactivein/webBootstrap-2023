@@ -45,12 +45,16 @@ ul{
     margin: auto 0;
 }
 
+.nav{
+    border-bottom: solid 3px  rgb(255, 213, 0,);
+}
+
 .nav:hover{
     border-bottom: solid 3px rgb(255, 213, 0);
-
 }
 
 .carousal{
+    position: relative;
     height: 500px;
     width: 100%;
     background-image: url(img/night-dark.jpg);
@@ -58,6 +62,17 @@ ul{
     background-size: cover;
     
 }
+
+.center-content{
+    position: absolute !important;
+    margin: auto 0 !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%,-50%) !important;
+}
+
+
+
 .tile-2{
     height: 600px !important;
 }
@@ -85,3 +100,48 @@ ul{
     background-color: rgb(235, 235, 235) !important;
 }
 
+
+progress{
+    border-radius: 50px;
+    width: 100%;
+    /* border: solid 1px rgb(190, 140, 32); */
+    height: 8px;
+}
+
+progress::-webkit-progress-bar{
+    color: rgb(46, 15, 15);
+    background: rgb(207, 207, 207);
+    border-radius: 50px;
+}
+progress::-webkit-progress-value{
+    background: rgb(255, 213, 0);
+    border-radius: 50px;
+    /* border: solid 1px greenyellow; */
+}
+
+.img-card{
+    /* background-position: center !important; */
+    background-size: cover !important;
+    background-position: center !important;
+    width: 80% !important;
+    height: 256px;
+    background-image: url(img/personnel-4-400x266.jpg) !important;
+}
+
+.img-card:hover{
+    background-size: cover !important;
+    transition: 100ms;
+}
+
+.data{
+    width: 80%;
+}
+
+.spanr{
+    float: right;
+}
+
+
+.spanl{
+    float: left;
+}
