@@ -60,15 +60,15 @@ ul{
     background-image: url(img/night-dark.jpg);
     background-position: center;
     background-size: cover;
-    
 }
 
 .center-content{
     position: absolute !important;
     margin: auto 0 !important;
     top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%,-50%) !important;
+    left: 30% !important;
+    transform: translate(-20%,-50%) !important;
+    overflow: hidden;
 }
 
 
@@ -94,12 +94,16 @@ ul{
 
 .tile-3{
     height: 600px !important;
+    overflow: hidden;
 }
 
 .tile-3l{
     background-color: rgb(235, 235, 235) !important;
+    
 }
-
+.tile-3 .container-md{
+    padding-left: 125px !important;
+}
 
 progress{
     border-radius: 50px;
@@ -119,29 +123,105 @@ progress::-webkit-progress-value{
     /* border: solid 1px greenyellow; */
 }
 
-.img-card{
-    /* background-position: center !important; */
-    background-size: cover !important;
-    background-position: center !important;
-    width: 80% !important;
-    height: 256px;
-    background-image: url(img/personnel-4-400x266.jpg) !important;
-}
 
-.img-card:hover{
-    background-size: cover !important;
-    transition: 100ms;
-}
 
-.data{
-    width: 80%;
-}
+
 
 .spanr{
     float: right;
 }
-
-
 .spanl{
     float: left;
 }
+
+
+.carousal2{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url(img/night-dark.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.carousal2 span{
+    color: rgb(255, 213, 0);
+}
+
+.carousal2 h1{
+    font-size:70px !important;
+}
+.carousal h1{
+    font-size:70px !important;
+}
+.carousal-p{
+    padding: 20px 200px !important;
+}
+
+
+.tile-5 p{
+    font-style: italic;
+    font-size: 13px;
+    color: rgb(167, 167, 167);
+}
+
+.tile-5 h3{
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+.tile-5 a{
+    color: black;
+}
+
+
+
+.worker{
+    /* object-position: center;
+    object-fit:cover; */
+    height: 250px;
+    overflow: hidden;
+}
+
+.cards img{    
+    transition:transform 500ms ease;
+}
+
+.cards:hover img{
+    transform: scale(1.1);
+}
+
+.footer{
+    /* height: 250px; */
+    /* overflow: hidden; */
+    background-color: rgb(36, 36, 36);
+}
+
+.ftr-brdr{
+    border-right:solid 0.125rem rgb(75, 75, 75) !important;
+}
+
+.ftr h5{
+    color: rgb(255, 213, 0);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.ftr ul{
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+.ftr li:hover{
+    color: white;
+}
+
+.ftr a{
+    font-style: none;
+    color: rgb(195, 195, 195)
+}
+
+
+
+
