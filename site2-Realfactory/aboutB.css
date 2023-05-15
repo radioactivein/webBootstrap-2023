@@ -45,6 +45,12 @@ ul{
     margin: auto 0;
 }
 
+.nav-bar{
+    background-color: red !important;
+    /* position: relative; */
+    position:sticky;
+    /* width: 100%; */
+}
 .nav{
     border-bottom: solid 3px  rgb(255, 213, 0,);
 }
@@ -134,6 +140,13 @@ progress::-webkit-progress-value{
     float: left;
 }
 
+.tile-4 span{
+    text-transform: uppercase;
+    font-size: 13px !important;
+    /* font-stretch:extra-expanded !important; */
+    letter-spacing: 1.5px;
+}
+
 
 .carousal2{
     position: relative;
@@ -150,7 +163,8 @@ progress::-webkit-progress-value{
 }
 
 .carousal2 h1{
-    font-size:70px !important;
+    font-size:50px !important;
+    font-weight: bold;
 }
 .carousal h1{
     font-size:70px !important;
@@ -159,6 +173,25 @@ progress::-webkit-progress-value{
     padding: 20px 200px !important;
 }
 
+.stats p{
+    color: rgb(255, 213, 0);
+}
+
+
+
+
+
+.tile-5{
+    background-color: rgb(235, 235, 235);
+}
+
+
+.data {
+    background-color: white;
+}
+.border1{
+    border:solid 1px rgb(0, 0, 0) !important;
+}
 
 .tile-5 p{
     font-style: italic;
