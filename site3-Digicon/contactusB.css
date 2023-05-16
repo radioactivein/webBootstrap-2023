@@ -23,8 +23,10 @@ a{
     color: black !important;
 }
 
-a:hover{
-    color: red !important;
+.myli a:hover{
+    /* color: red !important; */
+    background-color: #c1c7ff;
+    border-radius: 0.5rem;
 }
 
 .bt{
@@ -33,6 +35,10 @@ a:hover{
 
 .bt-1{
     border: solid 0.05rem #ff6984 !important;
+}
+
+.bt-1:hover,:focus-visible{
+    background-color: #ff6984 !important;
 }
 
 .bt-2{
@@ -74,6 +80,9 @@ a:hover{
 
 .one{
     background-image: url(img/web/mail.png);
+    /* width: 50px !important;
+    height: 50px !important;
+    padding: 10px !important; */
 }
 
 .one:hover,.two:hover, .three:hover{
