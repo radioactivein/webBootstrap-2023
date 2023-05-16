@@ -38,6 +38,7 @@ a:hover{
 .bt-2{
     background-color: #ff6984;
     color: white;
+    list-style-type: ;
 }
 
 
@@ -46,14 +47,90 @@ a:hover{
 
 }
 
-.data{
+.header2 h1{
+    font-size: 4rem !important;
+}
+
+.data div{
     width: 120px;
     height: 120px;
-    background-color: red;
-    background-image: url(img/web/dial.png);
+    padding: 30px !important;
+    background-color: #eee;
     background-position: center;
     background-repeat: no-repeat;
+    /* background-size: ; */
     border-radius: 50%;
 }
 
+.data h1{
+    font-size: 2.2rem !important;
+}
+
+.data p{
+    font-size: 1.2rem !important;
+    color: #7a7a7a;
+}
  
+
+.one{
+    background-image: url(img/web/mail.png);
+}
+
+.one:hover,.two:hover, .three:hover{
+    /* background-image: url(img/web/mail\ light.png); */
+    background-color: #ffcccc;
+}
+.two{
+    background-image: url(img/web/mobile.png);
+}
+
+.three{
+    background-image: url(img/web/map.png);
+}
+/* .myli > a{
+    text-decoration: underline !important;
+    color: #7a7a7a !important;
+} */
+
+/* .data div:nth-child(1){
+    background-image: url(img/web/dial.png); 
+} */
+/* .data div:nth-child(3){
+    background-image: url(img/web/facebook.png) !important;
+} */
+
+
+.contact{
+    /* height: 700px !important; */
+    /* width: 100% !important; */
+}
+
+.contact-r{
+    height: 600px;
+    border: solid 0.1em red;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+
+
+
+.contact-l{
+    height: 600px;
+    border: solid 0.1em red;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.input{
+       width: 100%; 
+       /* height: 2.2rem; */
+       outline: 0;
+       border:solid 0.05em #ff6984;
+       background-color: #fff0f0;  
+}
+
+.input:hover,:focus-visible{
+    background-color: rgb(240, 240, 255);
+}
