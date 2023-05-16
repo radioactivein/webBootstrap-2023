@@ -143,3 +143,27 @@ a:hover{
 .bt-3:hover{
     background-color: #0a1254;
 }
+
+
+.footer{
+    background-color: #172182;
+}
+
+.footer input{
+    width: 100%;
+    outline: 0;
+    border: solid 0.02rem red;
+}
+
+.footer input:hover,:focus-visible{
+    background-color: #eee;
+}
+
+.bt-5{
+    background-color: #ff6984;
+    border: none;
+}
+
+.bt-5:hover{
+    background-color: #ff2c52;
+}
