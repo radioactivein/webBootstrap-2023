@@ -34,9 +34,11 @@
     -webkit-text-fill-color: transparent;
     background-size: 120%; */
 }
-
-.cards-grid{
+.wrap{
     width: min(100%, 70em);
+}
+.cards-grid{
+    /* width: min(100%, 70em); */
     display: grid;
     margin-inline: auto;
     gap: 1.2rem;
