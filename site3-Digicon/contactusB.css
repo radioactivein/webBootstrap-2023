@@ -11,8 +11,12 @@ html{
     
 }
 
-.wrap{
+.wrap-h{
     padding:0 100px !important;
+}
+
+.wrap{
+    padding:100px 100px !important;
 }
 
 ul{
@@ -41,7 +45,8 @@ a{
 }
 
 .bt-1:hover,:focus-visible{
-    background-color: #ff6984 !important;
+    /* background-color: #ff6984 !important; */
+    color: #172182 !important;
 }
 
 .bt-2{
@@ -49,8 +54,10 @@ a{
     color: white;
     list-style-type: ;
 }
-
-
+.bt-2:hover,:focus-visible{
+    background-color: #fd4a6a !important;
+    /* color: #172182 !important; */
+}
 .header2{
     background-color: #eee;
 
@@ -178,4 +185,55 @@ a{
 
 .bt-5:hover{
     background-color: #ff2c52;
+}
+
+
+.cardss{
+    margin-top: -140px;
+}
+
+/************************* homepage ***********************************/
+
+.header3{
+    background-color: rgb(246, 246, 246) !important;
+    padding-bottom: 120px !important;
+}
+
+
+.card:hover,:focus-visible{
+    /* border: solid 1px red !important; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.box i{
+    position: absolute;
+    /* margin: 0 auto; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.b1{
+    background-color:#172182;
+}
+
+.b2{
+    background-color: rgb(255, 184, 52);
+}
+.b3{
+    background-color: #ff6984;
+}
+
+.ft-txt{
+    color: #ff6984 !important;
+}
+
+.bt-6{
+    background-color: #172182;
 }
