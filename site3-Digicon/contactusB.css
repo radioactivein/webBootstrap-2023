@@ -165,7 +165,7 @@ a{
 
 
 .footer{
-    background-color: #172182;
+    background-color: #0a1254;
 }
 
 .footer input{
@@ -230,10 +230,148 @@ a{
     background-color: #ff6984;
 }
 
-.ft-txt{
+.red-txt{
     color: #ff6984 !important;
 }
 
 .bt-6{
     background-color: #172182;
+}
+
+.about-item{
+    display: flex;
+    align-items: center;
+    border: solid 0.1rem rgb(250, 250, 250);
+}
+
+.icon-li{
+    border-radius: 0 10px 0 0 !important;
+    background-color: rgba(23, 33, 130, 0.2);
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.li-h4{
+    font-size: 18px !important;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+
+.content4{
+    width: 100%;
+    height: 15rem;
+    background-color: rebeccapurple;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(https://img.freepik.com/free-vector/worldmap-background-design_1127-2318.jpg?w=996&t=st=1684754501~exp=1684755101~hmac=98bb4c5a735a2830bc23eda1983663c169e451128ab3277e5dd97943bcbc2c65);
+    
+}
+
+.content4::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(255,255,255, 0.85);
+    /* background-image: linear-gradient(rgba(255, 254, 254, 0.686),rgba(252, 252, 252, 0.232)); */
+}
+
+.content4 div{
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;    
+}
+
+.content6{
+    position: relative;
+}
+.content6::before{
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    content: '';
+    background-size: cover;
+    background-color: rgb(246, 246, 246);
+}
+
+.blue-lrg-txt{
+    font-size: 60px !important;
+    color: #172182 !important;
+    font-weight: bold !important;
+}
+
+.stats-card p{
+    text-transform: capitalize;
+}
+
+.price-card{
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    z-index: 2 !important;
+    position: relative;
+    /* background-color: royalblue !important; */
+}
+
+.price-card img{
+    /* width: fit-content;
+    height: fit-content; */
+    max-width: 100% !important;
+    max-height: 100% !important;
+    display: block;
+    margin: 20px 0;
+    
+}
+
+.price-card-sub ul{
+    text-transform: capitalize;
+    line-height: 2;
+    font-size: 17px !important;
+}
+
+.price-card-sub{
+    background-color: ;
+    /* background-color: hsl(0, 0%, 100%); */
+    z-index: 2;
+    position: relative;
+}
+
+
+.working i{
+    font-size: 40px !important;
+    position: relative;
+}
+
+.working i{
+    /* position:absolute; */
+    color: #0a1254;
+    padding: 10px 0;
+    /* align-items: center; */
+    text-align: center;
+    /* justify-content: center; */
+    /* vertical-align: middle !important; */
+    width: 110px;
+    height: 110px;
+    display:inline-block;
+    background-color: #eee;
+    border-radius: 50%;
+    border: solid 10px white;
+    box-shadow: 0px 0px 1px 0px rgb(35, 35, 35);
+    margin-bottom: 15px;
+
+
 }
