@@ -48,7 +48,7 @@ ul{
 .nav-bar{
     background-color: red !important;
     /* position: relative; */
-    position:sticky;
+    /* position:sticky; */
     /* width: 100%; */
 }
 .nav{

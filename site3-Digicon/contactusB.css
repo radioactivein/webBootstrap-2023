@@ -151,7 +151,7 @@ a{
 }
 
 .input:hover,:focus-visible{
-    background-color: rgb(240, 240, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -168,15 +168,31 @@ a{
     background-color: #0a1254;
 }
 
+.footer p,ul{
+    color: #929292;
+}
+
 .footer input{
     width: 100%;
     outline: 0;
     border: solid 0.02rem red;
+    background-color: #eee;
+    height: 40px;
 }
 
 .footer input:hover,:focus-visible{
-    background-color: #eee;
+    background-color: #ffffff;
+    
 }
+
+.footer button{
+    font-size: 15px !important;
+    font-weight: bold;
+}
+
+
+
+
 
 .bt-5{
     background-color: #ff6984;
@@ -199,6 +215,12 @@ a{
     padding-bottom: 120px !important;
 }
 
+.header3 h1{
+    font-size: 60px;
+    color: #172182;
+    text-transform: capitalize;
+    font-weight: 700;
+}
 
 .card:hover,:focus-visible{
     /* border: solid 1px red !important; */
@@ -374,4 +396,56 @@ a{
     margin-bottom: 15px;
 
 
+}
+
+.cover-pic{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://themeturn.com/tf-db/digicon/digicon/assets/images/bg/6.jpg);
+}
+
+.testimonials{
+    position: absolute;
+    right: -75px;
+    bottom: -65px;
+    content: '';
+    display: block;
+    touch-action: pan-y;
+}
+
+.content8::before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 10, 146, 0.814);
+    content:'';    
+}
+
+.content8{
+    width: 100%;
+    height: 25rem;
+    background-color: rebeccapurple;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(https://plus.unsplash.com/premium_photo-1661691858418-3bb359c87004?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80);
+}
+
+.c7-txt{
+    /* position: absolute !important; */
+    z-index: 2 !important;
+}
+
+.row{
+    --bs-gutter-x: 0 !important;
+}
+
+.cards-data{
+    text-transform: capitalize !important;
 }
