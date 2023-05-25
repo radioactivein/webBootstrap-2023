@@ -10,7 +10,14 @@ html{
 .header{
     
 }
+.wrap-t{
+    padding:100px 0 100px 100px !important;
 
+}
+
+.wrap-b{
+    padding:0 100px 100px 100px !important;
+}
 .wrap-h{
     padding:0 100px !important;
 }
@@ -64,13 +71,13 @@ a{
 }
 
 .header2 h1{
-    font-size: 4rem !important;
+    font-size: 3.3rem !important;
 }
 
 .data div{
-    width: 120px;
-    height: 120px;
-    padding: 30px !important;
+    width: 100px;
+    height: 100px;
+    /* padding: 30px !important; */
     background-color: #eee;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,20 +86,27 @@ a{
 }
 
 .data h1{
-    font-size: 2.2rem !important;
+    font-size: 2rem !important;
 }
 
 .data p{
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
     color: #7a7a7a;
 }
  
 
 .one{
-    background-image: url(img/web/mail.png);
+    /* background-image: url(img/web/mail.png); */
     /* width: 50px !important;
     height: 50px !important;
     padding: 10px !important; */
+    font-size: 45px;
+    /* justify-content: center; */
+    padding: 15px;
+    /* top: -30px !important; */
+    /* display: block; */
+    /* padding: ; */
+    color:#172182;
 }
 
 .one:hover,.two:hover, .three:hover{
@@ -126,9 +140,11 @@ a{
 
 .contact-r{
     height: 600px;
-    border: solid 0.1em #d8d8d8;
-    border-radius: 1em;
+    border: solid 0.1em #ff0000;
+    border-radius: 0 1rem 1rem 0;
     overflow: hidden;
+    margin-left: -10px;
+    z-index: 0 !important;
 }
 
 
@@ -136,9 +152,11 @@ a{
 
 .contact-l{
     height: 600px;
-    border: solid 0.1em #d8d8d8;
+    border: solid 0.1em #ff0000;
     border-radius: 1em;
     overflow: hidden;
+    position: relative;
+    z-index: 4 !important;
     background-color: #eee;
 }
 
@@ -210,13 +228,13 @@ a{
 
 /************************* homepage ***********************************/
 
-.header3{
+.content1{
     background-color: rgb(246, 246, 246) !important;
     padding-bottom: 120px !important;
 }
 
-.header3 h1{
-    font-size: 60px;
+.content1 h1{
+    font-size: 60px !important;
     color: #172182;
     text-transform: capitalize;
     font-weight: 700;
@@ -375,7 +393,7 @@ a{
 
 .working i{
     font-size: 40px !important;
-    position: relative;
+    /* position: relative; */
 }
 
 .working i{
@@ -448,4 +466,55 @@ a{
 
 .cards-data{
     text-transform: capitalize !important;
+}
+
+.blue-d{
+    color: #0a1254;
+}
+.blue-l{
+    color: #172182;
+}
+.imge{
+    
+}
+
+.profile{
+    display:inline-block;
+    /* align-content: center; */
+    /* position: relative; */
+    position: relative;
+    width:  13rem;
+    height: 13rem;
+    border: solid 0.7rem white;
+    background-color: #172182;
+    border-radius: 50%;
+    /* background-image: url(img/team-1.jpg); */
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    /* transition: all .45s ease-out; */
+}
+
+.profile-cards:hover,:focus-visible{
+    background-color: #172182 !important;
+    color: white !important;
+    transition: all .50s ease;
+}
+
+.profile-cards:hover{
+    p{}
+}
+
+
+.p-one{
+    background-image: url(img/team-1.jpg) !important;
+}
+.p-two{
+    background-image: url(img/team-2.jpg) !important;
+}
+.p-three{
+    background-image: url(img/team-3.jpg) !important;
+}
+.p-four{
+    background-image: url(img/team-4.jpg) !important;
 }
