@@ -1,7 +1,15 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif ;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Poppins", sans-serif;
+    color: #111 !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    letter-spacing: -.5px !important; 
 }
 html{
     color-scheme: light dark;
@@ -150,7 +158,7 @@ a{
 
 
 
-.contact-l{
+.contact-form{
     height: 600px;
     border: solid 0.1em #ff0000;
     border-radius: 1em;
@@ -162,10 +170,21 @@ a{
 
 .input{
        width: 100%; 
+       /* float: ; */
        /* height: 2.2rem; */
        outline: 0;
        border:solid 0.05em #ff6984;
        background-color: #fff0f0;  
+}
+
+input:nth-child(1){
+    width: 49% !important;
+    margin-right:10px;
+}
+
+input:nth-child(2){
+    width: 48% !important;
+    /* margin-right:10px; */
 }
 
 .input:hover,:focus-visible{
@@ -501,8 +520,9 @@ a{
     transition: all .50s ease;
 }
 
-.profile-cards:hover{
-    p{}
+.profile-cards:hover p.text-dark-emphasis,
+.profile-cards:hover ul li a i{
+    color: #eee !important;
 }
 
 
@@ -517,4 +537,28 @@ a{
 }
 .p-four{
     background-image: url(img/team-4.jpg) !important;
+}
+
+
+
+.service-card{
+    position: relative;
+    overflow: hidden;
+    background-color: #eee !important;
+}
+.service-img img{
+    display: inline-block;
+    width: 50px;
+    border-radius: 50% !important;
+    height: 50px;
+}
+
+.service-card-count{
+    font-size: 10rem !important;
+    position: absolute;
+    font-weight: 700 !important;
+    bottom: -5.5rem;
+    right:-10px;
+    opacity: 0.05;
+    inset: 1;
 }
