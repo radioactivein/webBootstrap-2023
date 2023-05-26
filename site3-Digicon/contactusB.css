@@ -18,22 +18,26 @@ html{
 .header{
     
 }
-.wrap-t{
-    padding:100px 0 100px 100px !important;
 
-}
 
 .wrap-b{
-    padding:0 100px 100px 100px !important;
+    padding-bottom: 100px !important;
 }
 .wrap-h{
     padding:0 100px !important;
 }
 
-.wrap{
-    padding:100px 100px !important;
+.wrap-y{
+    padding: 100px 0;
 }
 
+.wrap{
+    padding:100px  !important;
+}
+.wrap-t{
+    padding-top:  100px !important;
+
+}
 ul{
     list-style: none;
     margin: 0;
@@ -435,7 +439,7 @@ input:nth-child(2){
 
 }
 
-.cover-pic{
+.cover-pic-client-review{
     width: 100%;
     height: 450px;
     position: relative;
@@ -450,7 +454,8 @@ input:nth-child(2){
     bottom: -65px;
     content: '';
     display: block;
-    touch-action: pan-y;
+    width: 100%;
+    /* touch-action: pan-y; */
 }
 
 .content8::before{
@@ -539,7 +544,9 @@ input:nth-child(2){
     background-image: url(img/team-4.jpg) !important;
 }
 
-
+.services h5{
+    text-transform: capitalize;
+}
 
 .service-card{
     position: relative;
@@ -548,17 +555,57 @@ input:nth-child(2){
 }
 .service-img img{
     display: inline-block;
-    width: 50px;
-    border-radius: 50% !important;
-    height: 50px;
+    width: 70px;
+    /* border-radius: 50% !important; */
+    height: 70px;
 }
 
 .service-card-count{
     font-size: 10rem !important;
     position: absolute;
     font-weight: 700 !important;
-    bottom: -5.5rem;
-    right:-10px;
+    bottom: -5.4rem;
+    right:-5px;
     opacity: 0.05;
     inset: 1;
+}
+
+
+.testimonials a{
+    color: #fd4a6a !important;
+}
+.review-user{
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: row;
+}
+.review-user-pic{
+    width: 80px;
+    height: 80px;
+    background-image:url(img/about.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 250px 300px 500px 120px ;
+}
+
+.testimonials-no{
+    float: right;
+
+   
+}
+
+.testimonials-no h1{
+    /* flex-direction: ; */
+    /* display:; */
+    /* text-align: end; */
+    font-size: 100px;
+    color: #9fa3c64f !important;
+    font-weight: 500 !important;
+}
+
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
 }
