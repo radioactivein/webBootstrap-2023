@@ -611,7 +611,7 @@ a{
 }
 
 .side-bar-wrap{
-    padding-inline: 1.5rem !important;
+    /* padding-inline: 1.5rem !important; */
 }
 
 .search-widget{
@@ -636,4 +636,14 @@ a{
 
 .media-post{
     flex: 1;
+}
+
+.side-bar-widget-tags{
+    display:flex !important;
+    /* gap: 2 !important; */
+    flex-wrap: wrap;
+}
+
+.side-bar-carousal img{
+    content: cover;
 }
