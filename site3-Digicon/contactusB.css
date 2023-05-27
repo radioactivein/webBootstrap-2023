@@ -628,10 +628,17 @@ a{
     align-items: flex-start;
 }
 
+.media
+
 .widget-latest-posts-img{
     width: 5rem;
     height: 5rem !important;
-    align-content: center;
+    /* align-content: center; */
+}
+
+.widget-latest-posts-img img{
+    object-fit: cover;
+    object-position: center;
 }
 
 .media-post{
@@ -644,6 +651,22 @@ a{
     flex-wrap: wrap;
 }
 
+.side-bar-carousal{
+    width: 100% ;
+    height: 30rem ;
+}
+
 .side-bar-carousal img{
-    content: cover;
+    object-fit: cover !important;
+    object-position: center  !important;
+}
+
+.article-cover-img-1{
+    width: 100%;
+    height: 25rem;
+}
+
+.article-cover-img-1 img{
+    object-fit: cover;
+    object-position: center;
 }
