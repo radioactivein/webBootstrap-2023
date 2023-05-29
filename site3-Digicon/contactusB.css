@@ -49,11 +49,60 @@ a{
     color: black !important;
 }
 
-.myli a:hover{
-    /* color: red !important; */
-    background-color: #c1c7ff;
-    border-radius: 0.5rem;
+.nav-link:hover{
+    background-color: #ff698597;
+    border-radius: 10px;
 }
+
+.dropdown{
+    position: relative;
+    /* background-color: #0a1254; */
+    /* padding: 10px !important; */
+    display: inline block;
+    cursor: pointer !important
+}
+
+.dropdown-content .nav-link{
+        padding: 15px !important;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content li:hover{
+    background-color: #d0d5ff;
+    
+}
+
+
+.dropdown-content li{
+    color: #172182 !important;
+    border-radius: 10px !important;
+}
+.dropdown-content{
+    margin-top: 10px;
+    margin-left: -17px;
+    border-radius: 8px;
+    text-align: start;
+    width: 150px;
+    background-color: #ffffff;
+    display: none;
+    z-index: 1;
+    /* padding: 10px 5px; */
+    color: rgb(0, 0, 0);
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
 
 .bt{
     border-radius: 5px;
