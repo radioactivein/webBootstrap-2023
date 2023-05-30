@@ -16,8 +16,12 @@ html{
 }
 
 .header{
-    
+    position: sticky !important;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10 !important;
 }
+
 
 
 .wrap-b{
