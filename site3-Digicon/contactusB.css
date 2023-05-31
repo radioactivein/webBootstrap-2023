@@ -15,14 +15,26 @@ html{
     color-scheme: light dark;
 }
 
+::-webkit-scrollbar{
+    color: #0a1254;
+    width: 20px;
+}
+
+::-webkit-scrollbar-button{
+    color: #7a7a7a;
+    width: 20px;
+}
+
 .header{
     position: sticky !important;
-    position: -webkit-sticky;
+    /* position: -webkit-sticky; */
     top: 0;
     z-index: 10 !important;
 }
 
-
+/* .width100{
+    width:100% !important;
+} */
 
 .wrap-b{
     padding-bottom: 100px !important;
@@ -304,14 +316,14 @@ a{
 
 /************************* homepage ***********************************/
 
-.content1{
+.home-landing-title{
     background-color: rgb(246, 246, 246) !important;
     padding-bottom: 120px !important;
 }
 
-.content1 h1{
+.home-landing-title h1{
     font-size: 60px !important;
-    color: #172182;
+    color: #172182 !important;
     text-transform: capitalize;
     font-weight: 700;
 }
@@ -501,15 +513,7 @@ a{
     background-image: url(https://themeturn.com/tf-db/digicon/digicon/assets/images/bg/6.jpg);
 }
 
-.testimonials{
-    position: absolute;
-    right: -75px;
-    bottom: -65px;
-    content: '';
-    display: block;
-    width: 100%;
-    /* touch-action: pan-y; */
-}
+
 
 .content8::before{
     position: absolute;
@@ -623,7 +627,22 @@ a{
     inset: 1;
 }
 
-
+.testimonials{
+    position: absolute;
+    right: -75px;
+    bottom: -22px;
+    content: '';
+    display: block;
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* width: 100% !important; */
+    /* touch-action: pan-y; */
+} 
+.testimonials-cards{
+    margin-bottom: 10px;
+}
 .testimonials a{
     color: #fd4a6a !important;
 }
@@ -722,4 +741,39 @@ a{
 .article-cover-img-1 img{
     object-fit: cover;
     object-position: center;
+}
+
+.article-highlite{
+    background-color: #172182;
+    color: #ffffff;
+    border-left:solid 0.3em #ff6984  ;
+    line-height: 2;
+}
+
+
+.article-highlite p:nth-child(2){
+    color: #ff6984 !important ;
+}
+
+.pre-code{
+    background-color: #f4f4f4;
+}
+
+article *>i{
+    color: #fd4a6a;
+}
+.pre-code pre{
+    margin-left: -200px !important;
+}
+.article-1 p,a{
+    color: #7a7a7a ;
+}
+.article-1 ul{
+    line-height: 2;
+    color: #000000;
+    list-style:disc;
+}
+
+.a-tags a{
+    color: #7a7a7a !important;
 }
