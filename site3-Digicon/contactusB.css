@@ -269,9 +269,10 @@ a{
        width: 100%; 
        /* float: ; */
        /* height: 2.2rem; */
+       color: #7a7a7a;
        outline: 0;
        border:solid 0.05em #ff6984;
-       background-color: #fff0f0;  
+       background-color: #f7f7f7 ;  
 }
 
 .form:nth-child(1){
@@ -284,8 +285,10 @@ a{
     /* margin-right:10px; */
 }
 
-.input:hover,:focus-visible{
-    background-color: rgb(255, 255, 255);
+.input:focus-visible{
+    background-color: rgb(255, 255, 255) !important; 
+    color: #000000 !important;
+
 }
 
 
@@ -311,11 +314,13 @@ a{
     outline: 0;
     border: solid 0.02rem red;
     background-color: #eee;
+    color: #7a7a7a;
     height: 40px;
 }
 
-.footer input:hover,:focus-visible{
-    background-color: #ffffff;
+.footer input:focus-visible{
+    background-color: #ffffff !important;
+    color: #000000 !important;
     
 }
 
@@ -806,4 +811,20 @@ article *>i{
 
 .a-tags a{
     color: #7a7a7a !important;
+}
+
+
+.comments img{
+    width: 4rem;
+    height: 4rem;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    
+}
+
+.comment-profile-pic{
+    box-shadow: 15px,25px,10px green !important;
+    width: 100%;
+    height: 5rem;
 }
