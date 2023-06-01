@@ -346,7 +346,7 @@ a{
 }
 
 
-.cardss{
+.feature-cardss{
     margin-top: -140px;
 }
 
@@ -376,11 +376,13 @@ a{
     height: fit-content;
     /* flex-direction: column; */
     /* overflow-x: hidden !important; */
-    animation: slide 10s infinite;
+    animation: slide 50s infinite;
+    /* transition: 0.5s ease; */
 }
 
 .hero-images img{
-    margin-right:;
+    padding: 0 10px;
+    margin-right: 5px;
 }
 
 @keyframes slide{
@@ -413,18 +415,20 @@ a{
 }
 
 
-.card{
+.cards{
     border: 0.1rem solid rgb(238, 238, 238)  !important;
+    background-color: #ffffff;
+    border-radius: .2rem;
     
     /* background-color: red !important; */
 }
 
-.card::after{
+.cards::after{
     transition: 0.8s ease;
     /* transform: scale(.5); */
 }
 
-.card:hover,:focus-visible{
+.cards:hover,:focus-visible{
     transform: scale(1.1);
     transition: 0.8s ease;
     /* animation: smooth; */

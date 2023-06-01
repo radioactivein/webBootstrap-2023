@@ -11,6 +11,9 @@ ul{
     /* padding: 0 !important;
     margin: 0 !important; */
 }
+a{
+  text-decoration: none !important;
+}
 
 .bt-li{
 
@@ -44,7 +47,7 @@ ul{
     background-size: 120%; */
 }
 .wrap{
-    width: min(100%, 70em);
+    width: min(100%, 1100px) !important;
 }
 .cards-grid{
     /* width: min(100%, 70em); */
