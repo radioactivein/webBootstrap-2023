@@ -4,7 +4,9 @@ body{
     font-family: 'Poppins', sans-serif ;
     overflow-x: hidden;
 }
-
+:root{
+    --blue:rgba(197, 131, 255, 0.655);
+}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "Poppins", sans-serif;
     color: #111 !important;
@@ -55,6 +57,7 @@ html{
  
 .header{
     position: sticky !important;
+    box-shadow: 10px 0px 10px rgb(221, 221, 221);
     /* position: -webkit-sticky; */
     top: 0;
     z-index: 10 !important;
@@ -361,10 +364,80 @@ a{
     font-weight: 700;
 }
 
+.wrapper{
+    position: relative;
+    width: 100%;
+    /* height: 5rem; */
+    overflow: hidden;
+}
+
+.hero-images{
+    display: flex !important;
+    height: fit-content;
+    /* flex-direction: column; */
+    /* overflow-x: hidden !important; */
+    animation: slide 10s infinite;
+}
+
+.hero-images img{
+    margin-right:;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+
+}
+
+
+.card{
+    border: 0.1rem solid rgb(238, 238, 238)  !important;
+    
+    /* background-color: red !important; */
+}
+
+.card::after{
+    transition: 0.8s ease;
+    /* transform: scale(.5); */
+}
+
 .card:hover,:focus-visible{
+    transform: scale(1.1);
+    transition: 0.8s ease;
+    /* animation: smooth; */
+    
     /* border: solid 1px red !important; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: 0 0.3rem 0 red;
 }
+
+/* .card1:hover,:focus-visible h5 {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+} */
 
 .box{
     width: 50px;
@@ -422,6 +495,11 @@ a{
 }
 
 
+.about-item:hover {
+    border: 0.1rem solid var(--blue)  !important;
+    /* box-shadow: 20px 0px 25px  20px red; */
+    box-shadow: inset 0px 0px 100px  rgb(110, 122, 255);
+}
 .content4{
     width: 100%;
     height: 15rem;
@@ -612,11 +690,12 @@ a{
 .profile-cards:hover,:focus-visible{
     background-color: #172182 !important;
     color: white !important;
-    transition: all .50s ease;
+    transition: all .8s ease;
 }
 
 .profile-cards:hover p.text-dark-emphasis,
-.profile-cards:hover ul li a i{
+.profile-cards:hover ul li a i,
+.profile-cards:hover h3{
     color: #eee !important;
 }
 
