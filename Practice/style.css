@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 
+
 .body{
     margin: 0;
+}
+
+.grid-cards{
+  background-image: linear-gradient(rgb(255, 212, 70),rgb(34, 34, 34)) !important;
 }
 
 ul{
@@ -157,3 +162,22 @@ a{
   .drop-li a:hover {
     background-color: bisque;
   }
+:root{
+  --bordr-clr:red;
+}
+
+  .dark-cards{
+    background-color: rgb(34, 34, 39) !important;
+    border: solid 0.5rem rgb(255, 120, 42) !important;
+    border-color: var(--bordr-clr) !important;
+  }
+
+  /* .navbar
+  .carouselExample{
+    display: block !important;
+    height: 250px !important;
+    width: 100% !important;
+  } */
+
+
+
