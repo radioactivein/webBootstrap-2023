@@ -180,4 +180,15 @@ a{
   } */
 
 
+  .carousel-item{
+     height: 300px;
+     width: 100%;
+  }
+
+  .carousel-item img{
+    height: inherit;
+    width: 100%;
+    object-fit: cover !important;
+    /* object-position: top; */
+  }
 
