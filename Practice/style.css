@@ -8,7 +8,7 @@
 }
 
 .grid-cards{
-  background-image: linear-gradient(rgb(255, 212, 70),rgb(34, 34, 34)) !important;
+  background-image: linear-gradient(rgb(175, 70, 255),rgb(35, 127, 240),rgb(26, 26, 26)) !important;
 }
 
 ul{
@@ -18,6 +18,11 @@ ul{
 }
 a{
   text-decoration: none !important;
+}
+
+.nav2{
+ background-image: linear-gradient(90deg,rgb(217, 228, 232),rgb(197, 255, 253));
+ box-shadow:0 0px 3px 0  rgb(0, 36, 128);
 }
 
 .bt-li{
@@ -34,11 +39,15 @@ a{
     justify-content: center;
 }
 
+.cards2{
+  background-image: linear-gradient(180deg,rgb(23, 23, 23),rgb(47, 47, 47));
+}
+
 .title1{
 
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 4rem;
-    background: linear-gradient(-45deg,rgb(191, 191, 0),rgb(189, 0, 0),rgb(255, 138, 36),rgb(218, 98, 6));
+    background: linear-gradient(45deg,rgb(191, 0, 0),rgb(189, 0, 167),rgb(255, 218, 36),rgb(6, 218, 10));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -170,8 +179,15 @@ a{
     background-color: rgb(34, 34, 39) !important;
     border: solid 0.5rem rgb(255, 120, 42) !important;
     border-color: var(--bordr-clr) !important;
+    overflow: hidden;
+    width: 100%;
   }
 
+  .dark-cards div{
+    height: 200px !important;
+    overflow: hidden;
+    width: 100%;
+  }
   /* .navbar
   .carouselExample{
     display: block !important;
@@ -181,8 +197,9 @@ a{
 
 
   .carousel-item{
-     height: 300px;
-     width: 100%;
+     height: 500px;
+     width: 100vw;
+     
   }
 
   .carousel-item img{
