@@ -159,7 +159,7 @@ a{
     border: solid 0.05rem #ff6984 !important;
 }
 
-.bt-1:hover,:focus-visible{
+.bt-1:hover,.bt-1:focus-visible{
     /* background-color: #ff6984 !important; */
     color: #172182 !important;
 }
@@ -428,7 +428,7 @@ a{
     /* transform: scale(.5); */
 }
 
-.cards:hover,:focus-visible{
+.cards:hover,.cards:focus-visible{
     transform: scale(1.1);
     transition: 0.8s ease;
     /* animation: smooth; */

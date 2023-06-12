@@ -5,8 +5,15 @@
 
 .body{
     margin: 0;
+   
 }
 
+
+
+
+:root{
+  --red:#f67280, #6c5b7b, #ece5ce;
+}
 .grid-cards{
   background-image: linear-gradient(rgb(175, 70, 255),rgb(35, 127, 240),rgb(26, 26, 26)) !important;
 }
@@ -23,6 +30,15 @@ a{
 .nav2{
  background-image: linear-gradient(90deg,rgb(217, 228, 232),rgb(197, 255, 253));
  box-shadow:0 0px 3px 0  rgb(0, 36, 128);
+}
+
+
+.navbar-brand  div{
+ 
+}
+.navbar-brand div span{
+ border: solid 1px;
+ padding: 1px;
 }
 
 .bt-li{
@@ -197,7 +213,7 @@ a{
 
 
   .carousel-item{
-     height: 500px;
+     height: 400px;
      width: 100vw;
      
   }
@@ -209,3 +225,53 @@ a{
     /* object-position: top; */
   }
 
+  .hello{
+    padding: 2px;
+    /* background-image: linear-gradient(var(--red)); */
+    /* border-image: linear-gradient(var(--red)); */
+    border: solid 1px;
+  }
+
+.navbar-column{
+  display: flex;
+  justify-content: space-between;
+}
+
+  .navbar-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    /* justify-content: space-between; */
+  }
+
+  .bt-nav-back{
+    border-radius: 50% !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    width: 40px;
+    aspect-ratio: 1/1;
+    /* display: block !important; */
+    background-color: rgb(0, 0, 0) !important;
+  }
+
+  .bt-nav-back:hover,.bt-nav-back:focus-visible{
+    color: rgb(0, 0, 0) !important;
+    background-color: #ffffff !important;
+    cursor: pointer; 
+  }
+
+  .nav-item a{
+    border-bottom: rgba(255, 0, 0, 0) solid 2px;
+  }
+  .nav-item a:hover{
+    border-bottom: red solid 2px !important;
+  }
+
+  .bt-nav-back div{
+      display: flex;
+      align-items: center ;
+      text-align: center ;
+  }

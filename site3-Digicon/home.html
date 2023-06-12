@@ -16,6 +16,9 @@
     <title>Home | Digicon</title>
 </head>
 <body >
+
+   
+
     <div class="header container-fluid bg-white pt-3 pb-1">
         <div class="container-md wrap-h">
             <div class="row">
@@ -284,7 +287,7 @@
                             <div class=" fs-1 text-center red-txt p-1">
                                     <i class="bi bi-globe"></i>
                             </div>
-                            <h1 class="blue-lrg-txt" >4K</h1>
+                            <h1 class="blue-lrg-txt" ><div class="counter-value">4</div><span>k</span></h1>
                             <p>Global Customer</p>
                         </div>
                     </div>
@@ -293,7 +296,7 @@
                             <div class=" fs-1 text-center red-txt p-1 mb-1">
                                     <i class="bi bi-graph-up-arrow"></i>
                             </div>
-                            <h1 class="blue-lrg-txt" >384+</h1>
+                            <h1 class="blue-lrg-txt" ><div class="counter-value">384</div><span>+</span></h1>
                             <p>Potential growth</p>
                         </div>
                     </div>
@@ -302,7 +305,7 @@
                             <div class=" fs-1 text-center red-txt p-1 mb-1">
                                     <i class="bi bi-heart"></i>
                             </div>
-                            <h1 class="blue-lrg-txt" >192%</h1>
+                            <h1 class="blue-lrg-txt" ><div class="counter-value">192</div><span>%</span></h1>
                             <p>Expert employee</p>
                         </div>
                     </div>
@@ -311,7 +314,7 @@
                             <div class=" fs-1 text-center red-txt p-1 mb-1">
                                     <i class="bi bi-hand-thumbs-up"></i>
                             </div>
-                            <h1 class="blue-lrg-txt">25+</h1>
+                            <h1 class="blue-lrg-txt"><div class="counter-value">25</div><span>+</span></h1>
                             <p>countries served</p>
                         </div>
                     </div>
@@ -654,6 +657,23 @@
         </div>
     </div>
 </div>
+
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.counter-value').each(function(){
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            },{
+                duration: 1000,
+                easing: 'swing',
+                step: function (now){
+                    $(this).text(Math.ceil(now));
+            }
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
