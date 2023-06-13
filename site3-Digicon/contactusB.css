@@ -911,3 +911,7 @@ article *>i{
     width: 100%;
     height: 5rem;
 }
+
+.blue-lrg-txt div{
+    display: inline-block !important;
+  }
