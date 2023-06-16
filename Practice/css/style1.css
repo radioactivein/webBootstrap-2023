@@ -1,3 +1,13 @@
+.body{
+    padding: 0;
+    margin: 0;
+   background-color: red !important;
+    /* background-image: linear-gradient(228deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%) !important; */
+}
+
+
+
+
 .wrap{
     max-width: 1200px !important;
 }
@@ -8,7 +18,8 @@
 
 
 .navbar1{
-    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(0, 0, 0); */
+   /* background-image:  linear-gradient(228deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%) */
 }
 
 nav ul{
@@ -80,7 +91,7 @@ nav ul li{
 
 
     .nav-ul li :last-child {
-        border-bottom: solid 0.1px rgb(234, 0, 0) !important;
+        /* border-bottom: solid 0.1px rgb(234, 0, 0) !important; */
     }
 
     .nav-ul li:hover,
@@ -117,14 +128,138 @@ nav ul li{
         left:-100%;
         transition:all 0.5s ease-in;
         text-align: center;
+        z-index: 100;
     }
 
     #check:checked ~ ul{
         left: 0;
     }
-
-   
-
-    
 }
 
+
+.main-content img{
+    object-fit: cover;
+    object-position: center;
+    
+   
+}
+
+.main-content{
+    position: relative;
+}
+
+.custom-nav{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    /* z-index: 10; */
+}
+ .owl-prev{
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+ .owl-next{
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.owl-carousel-vertical{
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  .owl-carousel-vertical .item{
+    transform: rotate3d(0, 0, 1, -90deg);
+  }
+
+
+
+  .main-content {
+    position: relative;
+  }
+  .main-content .owl-theme .custom-nav {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+  }
+  .main-content .owl-theme .custom-nav .owl-prev, .main-content .owl-theme .custom-nav .owl-next {
+    position: absolute;
+    height: 100px;
+    color: inherit;
+    background: none;
+    border: none;
+    z-index: 10;
+  }
+  .main-content .owl-theme .custom-nav .owl-prev i, .main-content .owl-theme .custom-nav .owl-next i {
+    font-size: 2.5rem;
+    color: #cecece;
+  }
+  
+  
+          .main-content .owl-theme .custom-nav .owl-prev {
+    left: 0;
+  }
+  .main-content .owl-theme .custom-nav .owl-next {
+    right: 0;
+  }
+
+  i{
+    font-size: 50px !important;
+  }
+
+
+/* **************************************************************.parallax-item**************************************************** */
+
+  
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .parallax-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .parallax-item h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .parallax-item:first-child {
+    background: url("https://images.unsplash.com/photo-1663305411753-4c305e177ff3?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NDA4ODE&ixlib=rb-1.2.1&q=80");
+    background-size: cover;
+  }
+  
+  .parallax-item:nth-child(2) {
+    background: #fdd835;
+  }
+  
+  .parallax-item:nth-child(3) {
+    background: url("https://images.unsplash.com/photo-1663183539627-adbe2c8ef43d?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5Mzk5ODc&ixlib=rb-1.2.1&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect for DIV 3 */
+    min-height: 600px;
+  }
+  
+  .parallax-item:nth-child(4) {
+    background: #1565c0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .parallax-item h2 {
+      font-size: 1.5rem;
+    }
+  }
