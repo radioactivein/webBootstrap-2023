@@ -2,7 +2,7 @@ body{
     padding: 0 !important;
     margin: 0 !important;
     font-family: 'Poppins', sans-serif ;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 :root{
     --blue:rgba(197, 131, 255, 0.655);
@@ -914,4 +914,88 @@ article *>i{
 
 .blue-lrg-txt div{
     display: inline-block !important;
+  }
+
+
+  /* ************************************************** ************** ********************************************************************* */
+  /* ************************************************** nav -resposive ********************************************************************* */
+  /* ************************************************** ************** ********************************************************************* */
+
+  .myli{
+    display: inline-flex;
+  }
+
+
+  #check{
+    display: none;
+    float: left;
+  }
+
+  .nav-responsive-bt{
+    display: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    float: left;
+  }
+
+  @media(max-width:750px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .myli{
+        /* display: block; */
+        position: absolute;
+        top: 65.5px;
+        left: -100%;
+        display: none;
+
+        
+    }
+    .wrap,.wrap-h{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #check:checked ~ .myli{
+        display: block;
+        background-color: #ffffff;
+        right: 0;
+        overflow-y: scroll;
+        /* top: 65.5px; */
+    }
+
+    .myli li{
+        /* width: 50%; */
+    }
+
+    .myli li:hover{
+        background-color: #d0d5ff;
+    }
+
+    .nav-responsive-bt{
+        display: block;
+    }
+
+    div:has(.nav-responsive-bt){
+        
+        /* align-items: center; */
+        justify-content: flex-end;
+    }
+  }
+
+  @media(max-width:950px){
+    .wrap{
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+  }
+
+  
+  @media(max-width:1200px){
+    .wrap,.wrap-h{
+        padding-left:25px !important;
+        padding-right:25px !important;
+    }
   }

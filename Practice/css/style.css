@@ -232,6 +232,11 @@ a{
     border: solid 1px;
   }
 
+
+  .navbar1{
+    position: sticky !important;
+  }
+
 .navbar-column{
   display: flex;
   justify-content: space-between;
