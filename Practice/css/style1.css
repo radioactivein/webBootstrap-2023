@@ -26,13 +26,14 @@ nav ul{
     text-align: center;
     /* margin-right: 200px ; */
     margin-top:20px;
+}
     
 .navbar1{
   position: sticky;
   top:0;
 }    
 
-}
+
 a{
     text-decoration: none !important;
     color: black !important;
@@ -171,12 +172,12 @@ nav ul li{
     top: 50%;
 }
 
-.owl-carousel-vertical{
+/* .owl-carousel-vertical{
     transform: rotate3d(0, 0, 1, 90deg);
   }
   .owl-carousel-vertical .item{
     transform: rotate3d(0, 0, 1, -90deg);
-  }
+  } */
 
 
 
@@ -265,4 +266,14 @@ html {
     .parallax-item h2 {
       font-size: 1.5rem;
     }
+  }
+
+  
+  .owl-carousel-vertical{
+    transform: rotate3d(0,0,1,90deg) !important;
+  }
+
+  .owl-carousel-vertical img{
+    transform: rotate3d(0,0,1,-90deg) !important;
+    object-fit: cover;
   }
